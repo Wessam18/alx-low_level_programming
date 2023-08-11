@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/*
-* main - a function print a random number
+/**
+*main - entry point 
 */
 int main(void)
 {
