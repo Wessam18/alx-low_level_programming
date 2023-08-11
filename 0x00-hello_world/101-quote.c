@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Ac program that prints a line to the standard error
  *
- * Return: Always 0 (not Success)
+ * Return: Always 1 (Success)
  */
 int main(void)
 {
