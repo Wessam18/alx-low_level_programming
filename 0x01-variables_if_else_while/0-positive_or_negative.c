@@ -4,7 +4,7 @@
 /**
 *main - entry point
 *Description - A c program print random number
-*return 0 (sucess)
+*return: Always 0 (Success)
 */
 int main(void)
 {
