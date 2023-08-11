@@ -2,7 +2,9 @@
 #include <stdio.h>
 #include <time.h>
 /**
-*main - A c program that assign random number to the variable n each time it is executed it is a various number
+*main - entry point 
+*Description - A c program that assign random number to the variable n each time it is executed
+*return 0 (sucess)
 */
 int main(void)
 {
