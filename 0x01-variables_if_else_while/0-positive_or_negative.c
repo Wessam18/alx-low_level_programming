@@ -2,9 +2,11 @@
 #include <stdio.h>
 #include <time.h>
 /**
-*main - entry point
-*Description - A c program print random number
-*return: Always 0 (Success)
+* main - entry point
+*
+* Description - A c program print random number
+*
+* Return: Always 0 (Success)
 */
 int main(void)
 {
