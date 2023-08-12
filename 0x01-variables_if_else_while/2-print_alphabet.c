@@ -11,7 +11,7 @@
 int main(void)
 {
 	srand(time(0));
-	a = rand() - RAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
 
 char ch;
 	for (ch = 'a'; ch <= 'z'; ch++)
