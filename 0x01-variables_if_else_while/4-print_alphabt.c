@@ -12,11 +12,10 @@
 */
 int main(void)
 {
-int n;
-
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-	char ch = 'a';
+
+char ch = 'a';
 
 	while (ch <= 'z')
 	if (ch != 'e' && ch != 'q')
