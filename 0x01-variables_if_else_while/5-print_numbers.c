@@ -17,6 +17,6 @@ int n;
 	n = rand() - RAND_MAX / 2;
 	
 	for (n = 0 ; n < 10 ; n++)
-		printf("\n%d", n);
+		printf("%d\n", n);
 	return (0);
 }
