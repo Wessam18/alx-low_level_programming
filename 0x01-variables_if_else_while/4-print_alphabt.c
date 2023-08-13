@@ -1,26 +1,18 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <time.h>
 /**
+* main - entry point
 *
-* main - prints the alphabet in lowercase,
+* Description - A c program print alphabet in lowercase
 *
-* followed by a new line, except q and e
-*
-* Return: Aways 0 (Sucess)
-*
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-
 char ch = 'a';
-
-	while (ch <= 'z')
-	if (ch != 'e' && ch != 'q')
-		putchar(ch);
-	ch++;
-	putchar('\n');
-	return (0);
+for (ch = 'a' ; ch <= 'z' && ch != 'q' && ch != 'e'; ch++)
+	putchar(ch);
+putchar('\n');
+return (0);
 }
