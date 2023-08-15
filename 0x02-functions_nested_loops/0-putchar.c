@@ -12,6 +12,7 @@
 int main(void)
 {
 char ch = 'A';
-	putchar (ch, \n);
+putchar (ch);
+putchar ('\n');
 return (0);
 }
