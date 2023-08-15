@@ -1,8 +1,9 @@
 #include  <stdio.h>
 #define A (_putchar)
 /**
-*Description - A c program print _putchar
 *main - entery point
+*
+*Description - A c program print _putchar
 *
 *return = always 0 (success)
 *
