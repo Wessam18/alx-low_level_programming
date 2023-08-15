@@ -1,18 +1,20 @@
-#include  <stdio.h>
-#define A (_putchar)
+#include "main.h"
 /**
 *main - entery point
 *
-*Description - A c program print _putchar
+*Description : A c program that print with putchar function
 *
-*return = always 0 (success)
+*
+*Return: always 0 (success)
 *
 */
-
 int main(void)
 {
-char ch = 'A';
-putchar (ch);
-putchar ('\n');
+char str[] = "_putchar";
+int ch;
+
+for (ch = 0; ch < 8; ch++)
+	_putchar(str[ch]);
+_putchar('\n');
 return (0);
 }

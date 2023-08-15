@@ -1,6 +1,8 @@
-#ifndef MYHEADERS_H
-#define MYHEADERS_H
+#ifndef MAIN_H
+#define MAIN_H
 
-int add(int a, int b);
+#include <stdio.h>
+
+int _putchar(char ch);
 
 #endif
