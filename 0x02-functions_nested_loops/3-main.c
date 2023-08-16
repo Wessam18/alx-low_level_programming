@@ -5,9 +5,6 @@
  *
  * Return: Always 0.
  */
-int _islower(int c);
-int islower(int c);
-int isdigit(int c);
 int main(void)
 {
     int r;
