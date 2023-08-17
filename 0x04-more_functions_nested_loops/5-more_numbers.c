@@ -9,8 +9,13 @@ while (i < 10)
 {
 	int c = 0;
 
-	for (c = 0; c <= 14; c++)
+	for (c = 0; c <= 9; c++)
 		_putchar(c + '0');
+
+	int char = ch;
+
+	for (ch = 'a'; ch <= 'e'; ch++)
+		_putchar(ch);
 	i++;
 	_putchar('\n');
 }
