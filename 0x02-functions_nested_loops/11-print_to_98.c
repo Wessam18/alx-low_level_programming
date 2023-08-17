@@ -12,8 +12,6 @@ int x;
 		for (x = n; x <= 98; x++)
 		{
 			printf("%d", x);
-			putchar(',');
-			putchar(' ');
 		}
 		printf("\n");
 	}
@@ -22,9 +20,10 @@ int x;
 		for (x = n; x >= 98; x--)
 		{
 			printf("%d", x);
-			putchar(',');
-			putchar(' ');
 		}
 		printf("\n");
+		putchar(',');
+		putchar(' ');
+
 	}
 }
