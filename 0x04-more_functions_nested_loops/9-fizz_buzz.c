@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
 *main - program that print from 0 to 100
 *
