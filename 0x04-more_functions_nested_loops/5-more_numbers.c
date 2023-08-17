@@ -10,9 +10,8 @@ while (i < 10)
 	int c = 0;
 
 	for (c = 0; c <= 14; c++)
-		_putchar(c);
+		_putchar(c + '0');
 	i++;
-
 	_putchar('\n');
 }
 }
