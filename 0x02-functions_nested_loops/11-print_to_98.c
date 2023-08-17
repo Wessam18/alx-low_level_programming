@@ -11,7 +11,14 @@ int x;
 	{
 		for (x = n; x <= 98; x++)
 		{
+			if (x == 98)
 			printf("%d", x);
+			else
+			{
+				printf("%d", x);
+				putchar(',');
+				putchar(' ');
+			}
 		}
 		printf("\n");
 	}
@@ -19,11 +26,15 @@ int x;
 	{
 		for (x = n; x >= 98; x--)
 		{
+			if (x == 98)
 			printf("%d", x);
+			else
+			{
+				printf("%d", x);
+				putchar(',');
+				putchar(' ');
+			}
 		}
 		printf("\n");
-		putchar(',');
-		putchar(' ');
-
 	}
 }
