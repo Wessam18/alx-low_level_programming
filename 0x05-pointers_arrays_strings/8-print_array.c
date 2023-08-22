@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  *print_array - function that prints n elements of an array of integers,
  *
@@ -16,7 +16,7 @@ int x;
 		{
 			printf("%d", a[x]);
 			printf(",");
-			ptintf(" ");
+			printf(" ");
 		}
 		else
 			printf("%d", a[x]);
