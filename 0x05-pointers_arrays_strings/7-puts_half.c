@@ -15,7 +15,7 @@ length = strlen(str);
 	if (length % 2 == 0)
 		mid = length / 2;
 	else
-		mid = (length - 1) / 2;
+		mid = (length + 1) / 2;
 
 	for (x = mid; x <= length; x++)
 
