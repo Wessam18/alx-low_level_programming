@@ -17,7 +17,7 @@ length = strlen(str);
 	else
 		mid = (length + 1) / 2;
 
-	for (x = mid; x <= length; x++)
+	for (x = mid; x < length; x++)
 
 		_putchar(str[x]);
 
