@@ -14,9 +14,11 @@ int j = 0;
 
 	while (haystack[i])
 	{
-		if (haystack[i] == needle[j])
-		{
-			return (needle + j);
+		for (j = 0; needle[j] != '\0'; j++)
+		{	
+			if (haystack[i] == needle[j])
+				return (needle + j);
+
 		}
 		i++;
 
