@@ -20,7 +20,9 @@ int j = 0;
 				break;
 		}
 
-		return (haystack + i + j);
+		if (needle[j] == '\0')
+
+			return (haystack + i);
 	}
 	return (NULL);
 }
