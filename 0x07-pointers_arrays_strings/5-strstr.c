@@ -20,7 +20,7 @@ int j = 0;
 				break;
 		}
 
-		return (needle + j);
+		return (haystack + i + j);
 	}
 	return (NULL);
 }
