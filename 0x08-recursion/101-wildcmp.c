@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *wildcmp - function compare 2 string 
- * 
+*wildcmp - function compare 2 string 
+* 
  *@s1: string 1
  *@s2: string 2
- * 
+*Return: the result 
 */
 int wildcmp(char *s1, char *s2)
 {
