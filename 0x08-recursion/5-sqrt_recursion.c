@@ -6,7 +6,7 @@
 */
 int _sqrt_recursion(int n)
 {
-return (ft_sqrt_recursion(n, 0));
+return (_sqrt_recursion(n, 0));
 }
 /**
  * ft_sqrt_recursion - function get square root.
