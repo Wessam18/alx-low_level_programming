@@ -5,15 +5,8 @@
  *@argv: argument vector
  *Return: the value of i
 */
-int main(int argc, char* argv[])
+int main(int argc, void char* argv[])
 {
-int i = 0;
-
-if (**argv != '\0')
-{
-for (i = 0; i < argc; i++)
-return (i);
-} 
-return (i);
-
+printf("%d\n", argc -1);
+return (0);
 }
