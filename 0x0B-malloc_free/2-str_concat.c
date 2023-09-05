@@ -27,6 +27,7 @@ if (s1 == NULL)
 s1 = '\0';
 if (s2 == NULL)
 s2 = '\0';
+
 len1 = _strlen(s1);
 len2 = _strlen(s2);
 m = (char *) malloc((len1 + len2) *sizeof(char) + 1);
@@ -34,7 +35,6 @@ if (m == 0)
 {
 return (0);
 }
-else
 for (i = 0; i <= (len1 + len2); i++)
 {
 if (i < len1)
