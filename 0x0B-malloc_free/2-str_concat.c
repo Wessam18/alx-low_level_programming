@@ -32,7 +32,7 @@ len2 = _strlen(s2);
 m = (char *) malloc((len1 + len2) *sizeof(char) + 1);
 if (m == 0)
 {
-return (0);
+return (NULL);
 }
 for (i = 0; i <= (len1 + len2); i++)
 {
