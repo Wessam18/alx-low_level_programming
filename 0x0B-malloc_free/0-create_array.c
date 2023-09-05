@@ -11,9 +11,9 @@ char *create_array(unsigned int size, char c)
 {
 char *x;
 x = (char *) malloc(size * sizeof(char));
-if (size == 0)
+if (size == 0 || x == 0)
 return (NULL);
-while (size--)
-x[size] = c;
+for (a = 0; a <= size; a++)
+x[a] = c;
 return (x);
 }
