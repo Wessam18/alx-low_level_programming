@@ -22,14 +22,15 @@ return (len);
 char *str_concat(char *s1, char *s2)
 {
 int i;
-int len1 = _strlen(s1);
-int len2 = _strlen(s2);
+int len1;
+int len2;
 char *m;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-
+int len1 = _strlen(s1);
+int len2 = _strlen(s2);
 m = (char *) malloc((len1 + len2) * sizeof(char) + 1);
 if (m == 0)
 {
