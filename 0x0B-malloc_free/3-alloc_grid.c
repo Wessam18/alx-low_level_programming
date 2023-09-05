@@ -14,7 +14,7 @@ int **m, i = 0, j = 0;
 if (width <= 0 || height <= 0)
 return (NULL);
 
-m = (int **) malloc(height * sizeof(int*));
+m = (int **) malloc(height * sizeof(int *));
 if (m == NULL)
 return (NULL);
 
