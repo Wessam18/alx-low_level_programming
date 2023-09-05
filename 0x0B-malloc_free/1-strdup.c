@@ -25,7 +25,7 @@ return (NULL);
 }
 else
 {
-for (i = 0; str[i] < (x +1); i++)
+for (i = 0; str[i] < x; i++)
 m[i] = str[i];
 }
 }
