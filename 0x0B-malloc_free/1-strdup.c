@@ -27,6 +27,7 @@ else
 {
 for (i = 0; str[i] < x; i++)
 m[i] = str[i];
+m[i] = '\0';
 }
 }
 return (m);
