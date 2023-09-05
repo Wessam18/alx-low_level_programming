@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *_strlen - get length of string
- *@s1: string 1
+ *_strlen - get length
+ *@s: string 
  *Return: length
 */
 int _strlen(char *s)
@@ -13,8 +13,8 @@ return (len);
 }
 
 /**
- *str_concat - function concatinate strings 
- * 
+ *str_concat - function concatinate strings
+ *
  *@s1: string 1
  *@s2: string 2
  *Return: null
@@ -29,7 +29,7 @@ if (s2 == NULL)
 s2 = '\0';
 len1 = _strlen(s1);
 len2 = _strlen(s2);
-m = (char *) malloc((len1 + len2) * sizeof(char) + 1);
+m = (char *) malloc((len1 + len2) *sizeof(char) + 1);
 if (m == 0)
 {
 return (NULL);
