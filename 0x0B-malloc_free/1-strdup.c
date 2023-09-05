@@ -28,6 +28,6 @@ else
 for (i = 0; i < x; i++)
 m[i] = str[i];
 }
-return (m);
 }
+return (m);
 }
