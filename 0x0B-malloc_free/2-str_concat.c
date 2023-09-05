@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *_strlen - get length
- *@s: string 
+ *@s: string
  *Return: length
 */
 int _strlen(char *s)
@@ -32,7 +32,7 @@ len2 = _strlen(s2);
 m = (char *) malloc((len1 + len2) *sizeof(char) + 1);
 if (m == 0)
 {
-return (NULL);
+return (0);
 }
 else
 for (i = 0; i <= (len1 + len2); i++)
