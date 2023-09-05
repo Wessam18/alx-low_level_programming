@@ -17,7 +17,7 @@ return (NULL);
 
 for (x = 0; str[x] != '\0'; x++)
 {
-m = malloc(x * sizeof (*str) + 1);
+m = malloc(x * sizeof(*str) + 1);
 
 if (m == 0)
 {
@@ -30,5 +30,4 @@ m[i] = str[i];
 }
 return (m);
 }
-return (0);
 }
