@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  *_strdup - function duplicate string
- * 
+ *
  *@str: string
  *Return: null
- * 
+ *
 */
 char *_strdup(char *str)
 {
@@ -23,7 +23,7 @@ if (m == 0)
 {
 return (NULL);
 }
-else 
+else
 {
 for (i = 0; i < x; i++)
 m[i] = str[i];
