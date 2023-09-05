@@ -30,7 +30,7 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-m = (char *) malloc((len1 + len2) *sizeof(char) + 1);
+m = (char *) malloc((len1 + len2) * sizeof(char) + 1);
 if (m == 0)
 {
 return (NULL);
