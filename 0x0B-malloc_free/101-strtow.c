@@ -26,24 +26,24 @@ return (NULL);
 for (i = 0; str[i] != '\0' && k < count; i++)
 {
 if (str[i] != ' ' || str[i] != '\t')
-		{
-			len = 0;
-			j = i;
-			while ((str[j] != ' ' || str[j] != '\t') && str[j] != '\0')
-				j++, len++;
-			array[k] = malloc((len + 1) * sizeof(char));
-			if (array[k] == NULL)
-			{
-				for (k = k - 1; k >= 0; k++)
-					free(array[k]);
-				free(array);
-				return (NULL);
-			}
-			for (m = 0; m < len; m++, i++)
-				array[k][m] = str[i];
-			array[k++][m] = '\0';
-		}
-	}
-	array[k] = NULL;
-	return (array);
+{
+len = 0;
+j = i;
+while ((str[j] != ' ' || str[j] != '\t') && str[j] != '\0')
+j++, len++;
+array[k] = malloc((len + 1) * sizeof(char));
+if (array[k] == NULL)
+{
+for (k = k - 1; k >= 0; k++)
+free(array[k]);
+free(array);
+return (NULL);
+}
+for (m = 0; m < len; m++, i++)
+array[k][m] = str[i];
+array[k++][m] = '\0';
+}
+}
+array[k] = NULL;
+return (array);
 }
