@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *main - function print argumrnt count
- * 
+ *
  *@argc: argument counter
  *@argv: argument vector
  *Return: always 0
