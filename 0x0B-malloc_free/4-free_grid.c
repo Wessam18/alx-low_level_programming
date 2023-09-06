@@ -1,20 +1,21 @@
 #include "main.h"
 /**
- *free_grid - function free memory 
- * 
+ *free_grid - function free memory
+ *
  *@grid: pointer of memory
  *@height: array
  *Return: null
 */
 void free_grid(int **grid, int height)
 {
-int i = 0;
+int i;
 if (grid[i] == NULL)
 {
+return;
+}
 for (i = 0; i < height; i++)
 {
 free(grid[i]);
 }
 free(grid);
-}
 }
