@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *strtow - function to separate 
- * 
+ *strtow - function to separate
+ *
  *@str: string
- *Return: array 
+ *Return: array
 */
 char **strtow(char *str)
 {
@@ -46,5 +46,4 @@ if (str[i] != ' ' || str[i] != '\t')
 	}
 	array[k] = NULL;
 	return (array);
-} 
-  
+}
