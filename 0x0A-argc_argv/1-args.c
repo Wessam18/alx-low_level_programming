@@ -1,8 +1,10 @@
 #include "main.h"
 /**
+ *main - function print argumrnt count
+ * 
  *@argc: argument counter
  *@argv: argument vector
- *Return: the value of i
+ *Return: always 0
 */
 int main(int argc, char *argv[])
 {
