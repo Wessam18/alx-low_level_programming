@@ -25,9 +25,9 @@ if (m[i] == NULL)
 for (--i; i >= 0; i--)
 {
 free(m[i]);
+}
 free(m);
 return (NULL);
-}
 }
 for (i = 0; i < height; i++)
 {
