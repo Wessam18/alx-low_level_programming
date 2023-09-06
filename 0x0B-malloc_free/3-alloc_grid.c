@@ -27,6 +27,6 @@ return (NULL);
 for (i = 0; i < height; i++)
 for (j = 0; j < width; j++)
 ;
-m[i][j] = '\0';
+m[i][j] = 0;
 return (m);
 }
