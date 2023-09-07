@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  *main - function that multiplay 2 numbers
  *
@@ -16,22 +17,23 @@ int sum = 0;
 
 if (argc == 1)
 {
-printf("0\n");
+    printf("0\n");
 }
 else
 {
-while (x < argc)
-{
-for (i = 0; argv[x][i] != '\0'; i++)
-{
-if (! (isdigit(argv[x][i])))
-{
-printf("Error\n");
-return (1);
-}
-sum += atoi(argv[x]);
-x++;
-}
+    while (x < argc)
+    {
+        for (i = 0; argv[x][i] != '\0'; i++)
+        {
+            if (! (isdigit(argv[x][i])))
+            {
+                printf("Error\n");
+                return (1);
+            }
+        }
+        sum += atoi(argv[x]);
+        x++;
+    }
 }
 printf("%i\n", sum);
 return (0);
