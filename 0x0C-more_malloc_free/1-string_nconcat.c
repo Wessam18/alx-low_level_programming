@@ -23,45 +23,33 @@ return (len);
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int i, len1, len2;
+unsigned int i, len1, len2, size;
 char *m;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-
 len1 = _strlen(s1);
 len2 = _strlen(s2);
-
 if (n >= len2)
 {
-m = malloc(len1 + len2 + 1);
+size = len1 + len2 + 1;
+}
+else
+{
+size = len1 + n + 1;
+}
+m = malloc(size + 1);
 if (m == 0)
 {
 return (NULL);
 }
-for (i = 0; i <= (len1 + len2); i++)
+for (i = 0; i <= size; i++)
 {
 if (i < len1)
 m[i] = s1[i];
 else
 m[i] = s2[i - len1];
-}
-}
-else
-m = malloc(len1 + n + 1);
-{
-if (m == 0)
-{
-return (NULL);
-}
-for (i = 0; i <= (len1 + n); i++)
-{
-if (i < len1)
-m[i] = s1[i];
-else
-m[i] = s2[i - len1];
-}   
 }
 m[i] = '\0';
 return (m);
