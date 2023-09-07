@@ -5,7 +5,6 @@
  *
  *@b: integer allocated
  *Return: null
- *
 */
 void *malloc_checked(unsigned int b)
 {
