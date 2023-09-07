@@ -39,7 +39,7 @@ else
 {
 size = len1 + n + 1;
 }
-m = malloc(size + 1);
+m = malloc(size);
 if (m == 0)
 {
 return (NULL);
