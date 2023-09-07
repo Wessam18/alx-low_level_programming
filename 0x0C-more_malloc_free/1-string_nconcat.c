@@ -33,18 +33,18 @@ len1 = _strlen(s1);
 len2 = _strlen(s2);
 if (n >= len2)
 {
-size = len1 + len2 + 1;
+size = len1 + len2;
 }
 else
 {
-size = len1 + n + 1;
+size = len1 + n;
 }
-m = malloc(size);
+m = malloc(size + 1);
 if (m == 0)
 {
 return (NULL);
 }
-for (i = 0; i < (size - 1); i++)
+for (i = 0; i <= size; i++)
 {
 if (i < len1)
 m[i] = s1[i];
