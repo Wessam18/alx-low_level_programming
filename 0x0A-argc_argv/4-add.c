@@ -20,7 +20,7 @@ printf("0\n");
 else
 {
 while (x < argc)
-{ 
+{
 if (atoi(argv[x]) == '\0')
 {
 printf("Error\n");
