@@ -16,6 +16,5 @@ if (x == 0)
 {
 exit(98);
 }
-else
 return (x);
 }
