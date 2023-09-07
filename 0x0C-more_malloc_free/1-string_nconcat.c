@@ -44,7 +44,7 @@ if (m == 0)
 {
 return (NULL);
 }
-for (i = 0; i <= size; i++)
+for (i = 0; i < size; i++)
 {
 if (i < len1)
 m[i] = s1[i];
