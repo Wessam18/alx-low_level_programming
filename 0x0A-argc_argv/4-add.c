@@ -25,7 +25,7 @@ while (x < argc)
 {
 for (i = 0; argv[x][i] != '\0'; i++)
 {
-if (! (isdigit(argv[x][i])))
+if (!(isdigit(argv[x][i])))
 {
 printf("Error\n");
 return (1);
