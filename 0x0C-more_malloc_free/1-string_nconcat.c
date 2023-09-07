@@ -29,34 +29,24 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
+
 len1 = _strlen(s1);
 len2 = _strlen(s2);
+
+if (n >= len2)
+n = len2;
 
 m = malloc(len1 + n + 1);
 if (m == 0)
 {
 return (NULL);
 }
-
-if (n >= len2)
-{
-for (i = 0; i <= (len1 + len2); i++)
-{
-if (i < len1)
-m[i] = s1[i];
-else
-m[i] = s2[i - len1];
-}
-}
-else
-{
 for (i = 0; i <= (len1 + n); i++)
 {
 if (i < len1)
 m[i] = s1[i];
 else
 m[i] = s2[i - len1];
-}
 }
 m[i] = '\0';
 return (m);
