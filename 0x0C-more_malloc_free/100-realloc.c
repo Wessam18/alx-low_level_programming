@@ -20,7 +20,7 @@ return (ptr);
 if (ptr == NULL)
 return (malloc(new_size));
 
-if (new_size == 0 || ptr != NULL)
+if (new_size == 0 && ptr != NULL)
 free(ptr);
 return (NULL);
 
