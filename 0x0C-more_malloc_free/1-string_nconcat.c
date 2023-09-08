@@ -33,7 +33,7 @@ len1 = _strlen(s1);
 len2 = _strlen(s2);
 if (n >= len2)
 {
-size = len1 + len2;
+size = len1 + len2 + 1;
 }
 else
 {
@@ -44,7 +44,7 @@ if (m == 0)
 {
 return (NULL);
 }
-for (i = 0; i < (size - 1); i++)
+for (i = 0; i <= (size - 1); i++)
 {
 if (i < len1)
 m[i] = s1[i];
