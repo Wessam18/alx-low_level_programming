@@ -37,14 +37,14 @@ size = len1 + len2;
 }
 else
 {
-size = len1 + n;
+size = len1 + n + 1;
 }
-m = malloc(size + 1);
+m = malloc(size);
 if (m == 0)
 {
 return (NULL);
 }
-for (i = 0; i < size; i++)
+for (i = 0; i <= (size - 1); i++)
 {
 if (i < len1)
 m[i] = s1[i];
