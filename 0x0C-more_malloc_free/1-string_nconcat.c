@@ -44,12 +44,13 @@ if (m == 0)
 {
 return (NULL);
 }
-for (i = 0; i <= (size - 1); i++)
+for (i = 0; i < (size - 1); i++)
 {
 if (i < len1)
 m[i] = s1[i];
 else
 m[i] = s2[i - len1];
 }
+m[i] = '\0';
 return (m);
 }
