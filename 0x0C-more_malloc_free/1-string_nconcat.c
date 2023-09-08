@@ -51,6 +51,5 @@ m[i] = s1[i];
 else
 m[i] = s2[i - len1];
 }
-m[i] = '\0';
 return (m);
 }
