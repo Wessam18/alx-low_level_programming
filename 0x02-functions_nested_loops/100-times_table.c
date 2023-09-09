@@ -34,6 +34,7 @@ int m, i;
 			_putchar(' ');
 			_putchar(' ');
 			_putchar(((n * m) / 100) + '0');
+			_putchar(((n * m) % 100) + '0');
 			_putchar(((n * m) / 10) + '0');
 			_putchar(((n * m) % 10) + '0');
 		}
