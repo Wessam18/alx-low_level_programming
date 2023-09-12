@@ -1,24 +1,36 @@
 #include "dog.h"
-#include <stdio.h>
 #include <stddef.h>
+
 /**
- *new_dog - function that initialize a variable of type struct dog
- *
- *@name: dog name
- *@age: dog age
- *@owner: dog owner
- *
- *Return: null
+ * new_dog - function that creates a new dog.
+ * @name: Input Name.
+ * @age: dog age.
+ * @owner: dog owner
+ * Return: null
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	dog_t *new_dog = malloc(sizeof(dog_t));
 
-if (d == NULL)
-{
-return;
-}
+	if (new_dog == NULL)
+	{
+		return (NULL);
+	}
 
-printf("Name: %s\n", (d->name) ? (d->name) : "(nil)");
-printf("Age: %f\n", d->age);
-printf("Owner: %s\n", (d->owner) ? (d->owner) : "(nil)");
+	new_dog->name = malloc(sizeof(char) * strlen(name) + 1);
+	new_dog->owner = malloc(sizeof(char) * strlen(owner) + 1);
+
+	if (new_dog->name == NULL || new_dog->owner == NULL)
+	{
+		free(new_dog->name);
+		free(new_dog->owner);
+		free(new_dog);
+		return (NULL);
+	}
+
+	strcpy(new_dog->name, name);
+	strcpy(new_dog->owner, owner);
+	new_dog->age = age;
+
+	return (new_dog);
 }
