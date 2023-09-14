@@ -5,12 +5,12 @@
  *
  *@a: num one
  *@b: num two
- *Return: as need 
- * 
+ *Return: as need
+ *
 */
 int op_add(int a, int b)
 {
-    return (a + b);
+return (a + b);
 }
 
 /**
@@ -18,12 +18,12 @@ int op_add(int a, int b)
  *
  *@a: num one
  *@b: num two
- *Return: as need 
- * 
+ *Return: as need
+ *
 */
 int op_sub(int a, int b)
 {
-    return (a - b);
+return (a - b);
 }
 
 /**
@@ -31,12 +31,12 @@ int op_sub(int a, int b)
  *
  *@a: num one
  *@b: num two
- *Return: as need 
- * 
+ *Return: as need
+ *
 */
 int op_mul(int a, int b)
 {
-    return (a * b);
+return (a * b);
 }
 
 /**
@@ -44,12 +44,12 @@ int op_mul(int a, int b)
  *
  *@a: num one
  *@b: num two
- *Return: as need 
+ *Return: as need
  *
 */
 int op_div(int a, int b)
 {
-    retutn (a / b);
+return (a / b);
 }
 
 /**
@@ -57,10 +57,10 @@ int op_div(int a, int b)
  *
  *@a: num one
  *@b: num two
- *Return: as need  
+ *Return: as need
  *
 */
 int op_mod(int a, int b)
 {
-    return (a % b);
+return (a % b);
 }
