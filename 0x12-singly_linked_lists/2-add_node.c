@@ -7,13 +7,14 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
-list_t *first_node;
-first_node = malloc(sizeof(list_t));
-
-    if (head == NULL)
+if (head == NULL)
     {
         return (NULL);
     }
+
+list_t *first_node;
+first_node = malloc(sizeof(list_t));
+
     if (first_node == NULL)
     {
         return (head);
@@ -26,7 +27,7 @@ first_node = malloc(sizeof(list_t));
             free(first_node);
             return(NULL);
         }
-        
+
         
     }
 

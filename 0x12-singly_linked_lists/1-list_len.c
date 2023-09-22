@@ -14,7 +14,7 @@ if (h == NULL)
 	return (0);
 }
 
-while (h->next != NULL)
+while (h != NULL)
 {
 	h = h->next;
 	i++;
