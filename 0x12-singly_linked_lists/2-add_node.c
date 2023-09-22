@@ -22,6 +22,11 @@ first_node = malloc(sizeof(list_t));
     {
         first_node -> str = strdup(str);
         if (first_node -> str != NULL)
+        {
+            free(first_node);
+            return(NULL);
+        }
+        
         
     }
 
