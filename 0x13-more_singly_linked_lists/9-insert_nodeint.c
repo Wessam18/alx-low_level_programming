@@ -15,7 +15,7 @@ listint_t *ptr;
 unsigned int i = 0;
 
 	temp = malloc(sizeof(listint_t));
-	if (temp == NULL || *head == NULL)
+	if (temp == NULL || *head == NULL || head == NULL)
 	{
 		return (NULL);
 	}
