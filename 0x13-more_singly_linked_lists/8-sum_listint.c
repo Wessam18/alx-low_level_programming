@@ -1,23 +1,22 @@
 #include "lists.h"
 /**
- *pop_listint - fun frees the list
+ *sum_listint - fun frees the list
  *@head: start of the list
- *Return: data
+ *Return: sum
 */
-int pop_listint(listint_t **head)
+int sum_listint(listint_t *head)
 {
-listint_t *temp;
-int data;
+int sum = 0;
 
-	if (*head == NULL)
+	if (head == NULL)
 	{
 		return (0);
 	}
+	while (head != NULL)
+	{
+		sum += head->n;
+		head = head->next;
+	}
 
-	data = (*head)->n;
-	temp = *head;
-	*head = (*head)->next;
-	free(temp);
-
-	return (data);
+	return (sum);
 }
