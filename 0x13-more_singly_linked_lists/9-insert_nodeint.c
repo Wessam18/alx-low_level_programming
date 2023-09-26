@@ -23,14 +23,11 @@ unsigned int i = 0;
 	temp->n = n;
 	temp->next = NULL;
 
-	while (ptr->next != NULL)
+	for (i = 0; i < idx; i++)
 	{
-		if (i == idx)
-		{
-			ptr->next = temp;
-		}
 		ptr = ptr->next;
-		i++;
 	}
+	temp->next = ptr->next;
+	ptr->next = temp;
 	return (temp);
 }
