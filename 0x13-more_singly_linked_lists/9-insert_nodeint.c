@@ -24,6 +24,12 @@ unsigned int i = 0;
 
 	for (i = 0; i < idx - 1; i++)
 	{
+		if(idx == 0) 
+		{
+			temp->next = *head; 
+			*head = temp; 
+ 			return (temp);
+		}
 		ptr = ptr->next;
 	}
 	temp->next = ptr->next;
