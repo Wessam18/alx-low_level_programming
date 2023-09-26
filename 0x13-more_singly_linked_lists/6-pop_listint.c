@@ -16,10 +16,10 @@ int data;
 
 	while ((*head) != NULL)
 	{
-		temp = (*head)->next;
 		data = (*head)->n;
-		free(*head);
-		*head = temp;
+		temp = *head;
+		*head = (*head)->next;
+		free(temp);
 	}
 	return (data);
 }
