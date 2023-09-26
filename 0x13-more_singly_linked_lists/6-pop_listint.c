@@ -14,12 +14,10 @@ int data;
 		return (0);
 	}
 
-	while ((*head) != NULL)
-	{
-		data = (*head)->n;
-		temp = *head;
-		*head = (*head)->next;
-		free(temp);
-	}
+	data = (*head)->n;
+	temp = *head;
+	*head = (*head)->next;
+	free(temp);
+
 	return (data);
 }
