@@ -15,7 +15,7 @@ unsigned int i = 0;
 	}
 	for (i = 0; i < index; i++)
 	{
-		if (i == 0)
+		if (index == 0)
 		{
 			return (NULL);
 		}
