@@ -21,7 +21,6 @@ unsigned int i = 0;
 	}
 
 	temp->n = n;
-	temp->next = NULL;
 
 	for (i = 0; i < idx - 1; i++)
 	{
