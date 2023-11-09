@@ -17,6 +17,5 @@ const dlistint_t *ptr = NULL;
 		ptr = ptr->next;
 		count++;
 	}
-	
 	return (count);
 }
