@@ -17,10 +17,9 @@ dlistint_t *temp = NULL;
 	temp->prev = NULL;
 	temp->next = *head;
 
-	if (head == NULL)
+	if (*head != NULL)
 	{
-		*head = temp;
-		return (temp);
+		(*head)->prev = temp;
 	}
 	*head = temp;
 	return (temp);
