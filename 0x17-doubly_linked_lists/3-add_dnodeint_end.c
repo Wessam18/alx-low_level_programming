@@ -18,10 +18,10 @@ dlistint_t *temp = NULL, *ptr;
 	temp->next = NULL;
 
 	if (*head == NULL)
-    {
-        *head = temp;
-        return (temp);
-    }
+	{
+		*head = temp;
+		return (temp);
+	}
 
 	ptr = *head;
 	while (ptr->next != NULL)
