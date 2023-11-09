@@ -36,13 +36,14 @@ unsigned int count = 0;
 		temp = temp->next;
 		count++;
 	}
-	
-	if (temp == NULL)
-    {
-        free(new);
-        return (NULL);
-    }
 
+	if (temp == NULL)
+	{
+		free(new);
+		return (NULL);
+	}
+	 if (temp->next != NULL)
+		temp->next->prev = new;
 	temp2 = temp->next;
 
 	temp->next = new;
