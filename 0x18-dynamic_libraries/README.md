@@ -1,1 +1,2 @@
-hello c
+#!/bin/bash
+hello c language
