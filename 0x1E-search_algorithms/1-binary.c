@@ -9,15 +9,15 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-size_t low = 0, mid;
-size_t i, high = size - 1;
+size_t low = 0;
+size_t high = size - 1;
+size_t mid, i;
 
 	if (!array || !size || !value)
 		return (-1);
 
 	while (low <= high)
 	{
-		mid = (low + high) / 2;
 		fprintf(stdout, "Searching in array:");
 		for (i = low; i <= high; i++)
 		{
@@ -27,12 +27,12 @@ size_t i, high = size - 1;
 		}
 		fprintf(stdout, "\n");
 
+
+		mid = (low + high) / 2;
 		if (array[mid] == value)
 			return (mid);
-
 		else if (array[mid] < value)
 			low = mid + 1;
-
 		else
 			high = mid - 1;
 	}
