@@ -13,7 +13,7 @@ size_t i = 0;
 	if (!array || !size || !value)
 		return (-1);
 
-	for (i = 0; i <= size; i++)
+	for (i = 0; i < size; i++)
 	{
 		fprintf(stdout, "Value checked array[%lu] = [%d]\n", i, array[i]);
 		if (array[i] == value)
