@@ -25,6 +25,8 @@ size_t right = jump, i;
 	printf("Value found between indexes [%lu] and [%lu]\n", left, right);
 
 
+	if (right > size)
+		right = size;
 	/* Linear search within the block */
 	for (i = left; i <= right && i < size; i++)
 	{
