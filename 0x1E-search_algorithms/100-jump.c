@@ -34,6 +34,11 @@ size_t right = jump, i;
 		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 		if (array[i] == value)
 			return (i); /* Found the value */
+		if (i == size - 1)
+			return (-1);
+
+		if (array[i] > value)
+			return (-1);
 	}
 	return (-1); /* Value not found */
 }
