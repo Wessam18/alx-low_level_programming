@@ -30,7 +30,7 @@ size_t right = 0, i;
 	{
 		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 		if (array[i] == value)
-			return (i); /* Found the value */
+			return (i);
 	}
-	return (-1); /* Value not found */
+	return (-1);
 }
