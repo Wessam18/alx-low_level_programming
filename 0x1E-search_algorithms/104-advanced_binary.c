@@ -27,10 +27,10 @@ size_t mid, i;
 	fprintf(stdout, "\n");
 
 	mid = left + (right - left) / 2;
-	if (array[mid] == value && array[mid - 1] != value)
+	if (array[mid] == value && (mid == left || array[mid - 1] != value))
 		return (mid);
 	else if (array[mid] >= value)
-		return (binary_recur(array, left, mid - 1, value));
+		return (binary_recur(array, left, mid, value));
 	else
 		return (binary_recur(array, mid + 1, right, value));
 
