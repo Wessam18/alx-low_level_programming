@@ -26,7 +26,7 @@ size_t mid, i;
 	}
 	fprintf(stdout, "\n");
 
-	mid = (left + right) / 2;
+	mid = left + (right - left) / 2;
 	if (array[mid] == value && array[mid - 1] != value)
 		return (mid);
 	else if (array[mid] >= value)
