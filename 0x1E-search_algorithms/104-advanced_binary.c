@@ -12,11 +12,11 @@ int binary_recur(int *array, size_t left, size_t right, int value)
 {
 size_t mid, i;
 
-	if (!array || !value)
+	if (!array || !value || left > right)
 		return (-1);
 
-	if (left >= right)
-		return (-1);
+	mid = (left + right) / 2;
+
 	fprintf(stdout, "Searching in array:");
 	for (i = left; i <= right; i++)
 	{
@@ -27,8 +27,7 @@ size_t mid, i;
 	fprintf(stdout, "\n");
 
 
-	mid = (left + right) / 2;
-	if (array[mid] == value)
+	if (array[mid] == value && array[mid - 1] != value)
 		return (mid);
 	else if (array[mid] < value)
 		return (binary_recur(array, mid + 1, right, value));
@@ -49,10 +48,8 @@ int advanced_binary(int *array, size_t size, int value)
 {
 size_t low = 0, high = size - 1;
 
-	if (array == NULL || !size || !value)
-	{
+	if (!array || !size || !value)
 		return (-1);
-	}
 
 	return (binary_recur(array, low, high, value));
 }
