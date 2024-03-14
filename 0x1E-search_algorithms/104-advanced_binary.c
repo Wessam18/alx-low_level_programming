@@ -39,9 +39,12 @@ size_t mid, i;
 
 
 /**
- * 
- * 
-*/
+ * advanced_binary - function that make binary search
+ * @array: the array to search in
+ * @size: the size of array
+ * @value: the value of array
+ * Return: the index of array
+ */
 int advanced_binary(int *array, size_t size, int value)
 {
 size_t low = 0, high = size - 1;
