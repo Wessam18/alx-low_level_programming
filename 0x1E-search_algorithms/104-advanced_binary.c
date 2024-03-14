@@ -15,8 +15,6 @@ size_t mid, i;
 	if (left > right)
 		return (-1);
 
-	
-
 	fprintf(stdout, "Searching in array:");
 	for (i = left; i <= right; i++)
 	{
@@ -33,9 +31,7 @@ size_t mid, i;
 		return (binary_recur(array, left, mid, value));
 	else
 		return (binary_recur(array, mid + 1, right, value));
-
 }
-
 
 /**
  * advanced_binary - function that make binary search
