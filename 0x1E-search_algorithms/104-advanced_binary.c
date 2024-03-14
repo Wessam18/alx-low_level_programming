@@ -15,27 +15,26 @@ size_t mid, i;
 	if (!array || !value)
 		return (-1);
 
-	while (left <= right)
+	if (left >= right)
+		return (-1);
+	fprintf(stdout, "Searching in array:");
+	for (i = left; i <= right; i++)
 	{
-		fprintf(stdout, "Searching in array:");
-		for (i = left; i <= right; i++)
-		{
-			fprintf(stdout, " %d", array[i]);
-			if (i < right)
-				fprintf(stdout, ",");
-		}
-		fprintf(stdout, "\n");
-
-
-		mid = (left + right) / 2;
-		if (array[mid] == value)
-			return (mid);
-		else if (array[mid] < value)
-			return (binary_recur(array, mid + 1, right, value));
-		else
-			return (binary_recur(array, left, mid - 1, value));
+		fprintf(stdout, " %d", array[i]);
+		if (i < right)
+			fprintf(stdout, ",");
 	}
-	return (-1);
+	fprintf(stdout, "\n");
+
+
+	mid = (left + right) / 2;
+	if (array[mid] == value)
+		return (mid);
+	else if (array[mid] < value)
+		return (binary_recur(array, mid + 1, right, value));
+	else
+		return (binary_recur(array, left, mid - 1, value));
+
 }
 
 
