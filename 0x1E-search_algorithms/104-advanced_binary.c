@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- * binary_search - Searches for a value in a sorted array
+ * binary_recur - Searches for a value in a sorted array
  * @array: Pointer to the first element of the array to search in
  * @size: Number of elements in the array
  * @value: Value to search for
@@ -30,9 +30,9 @@ size_t mid, i;
 		if (array[mid] == value)
 			return (mid);
 		else if (array[mid] < value)
-            return (binary_recur(array, mid + 1, right, value));
+			return (binary_recur(array, mid + 1, right, value));
 		else
-            return (binary_recur(array, left, mid - 1, value));
+			return (binary_recur(array, left, mid - 1, value));
 	}
 	return (-1);
 }
